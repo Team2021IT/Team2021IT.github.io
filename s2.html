@@ -1,0 +1,93 @@
+body {font-family: Arial, Helvetica, sans-serif;}
+.navbar {
+  float:right;
+  width: 92%;
+  background-color: #000000;
+  overflow: auto;
+}
+.navbar a {
+  float: right;
+  padding: 30px;
+  color: white;
+  text-decoration: line;
+  font-size: 17px;
+}
+
+.navbar a:hover {
+  background-color: #FF4500;
+}
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+  }
+}
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgba(0,0,0, 0.9);
+  overflow-x: scroll;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: line;
+  font-size: 20px;
+  color: #818181;
+  display: block;
+  transition: 0.5s;
+}
+
+.overlay a:hover {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 40px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
+}
+
+
+
+.list{
+ font-size:25px;
+ overflow:auto;
+ padding: 23px;
+ background-color: #1E90FF;
+ width: 4%;
+ cursor:pointer; 
+ float:left;
+
+}
+footer {
+    position:absolute;
+    background-color: hsl(0, 0%, 3%);
+    width: 99%; 
+    color: rgb(1, 10, 17); 
+    bottom: 0;
+}
