@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<head>
+  <link rel="stylesheet" type="text/css" href="style\style_soliman2.css" >
+  <meta charset="UTF-8">
+  <meta name="keywords" content="HTML, CSS">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>login</title>
+</head>
+<body>
+  <div class="navbar">
+        <h2 class="lol" style="display: inline; padding: 15px; text-decoration: line; color: white; font-size: 17px;  float: left;">Book Fair</h2>
+        <a class="active" href="#"><i class="fa fa-fw fa-home"></i> Home</a> 
+        <a href="#"><i class="fa fa-fw fa-search"></i> Search</a> 
+        <a href="#"><i class="fa fa-fw fa-envelope"></i> Contact</a> 
+        <a href="#"><i class="fa fa-fw fa-user"></i> Login</a>
+      </div>
+      <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">X</a>
+        <div class="overlay-content">
+          <a href="#">About</a>
+          <a href="#">Services</a>
+          <a href="#">Clients</a>
+          <a href="#">Contact</a>
+        </div>
+      </div>
+      <span class="list" onclick="openNav()">&#9776;</span>
+      
+      <script>
+      function openNav() {
+        document.getElementById("myNav").style.width = "15%";
+      }
+      
+      function closeNav() {
+        document.getElementById("myNav").style.width = "0%";
+      }
+      </script>
+<div class="center">
+<h1>Login</h1>
+<form method="get" autocomplete="on" target="_blank">
+<div class="txt_field">
+<label>Username</label>
+<input type="text" required >
+</div>
+<div class="txt_field">
+<label>password</label>
+<input type="Password" required >
+</div>
+<a href="page1.htm"><input class="submit" type="submit" value="login" ></a>
+<div class="signlink">
+I dont have an email. <a herf="page1.htm.htm">Signup</a>
+</div>
+</form>
+</div>
+<footer>
+  <h2> footer </h2>
+</footer>
+</body>
+</html>
