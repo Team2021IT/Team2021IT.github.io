@@ -1,0 +1,143 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    height: 750px;
+    background-image: url("design2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Amiri', serif;
+    }
+
+h1{
+    font-size: 21px;
+    color: rgb(3, 0, 0);
+    text-align: right;
+    position: absolute;
+    left: 430px;
+    top: 670px;
+    }
+
+ h2{
+    font-size: 24px;
+    color: rgb(3, 0, 0);
+    text-align: right;
+    position: absolute;
+    left: 140px;
+    top: 675px;
+    }
+
+.p1{
+    position: absolute;
+    text-align: right;
+    font-size: 21px;
+    max-width: 600;
+    left: 145px;
+    top: 180px;
+  }
+
+.p2{
+    position: absolute;
+    font-size: 21px;
+    right: 156px;
+    top: 85px;
+   }
+
+img{
+        position: absolute;
+        right: 90px;
+        top: 170px;
+        width: 10.7cm;
+        height: 14.3cm;
+    }
+
+
+
+
+    body {font-family: Arial, Helvetica, sans-serif;
+        margin: 0;
+        padding: 0;}
+        .navbar {
+          float:right;
+          width: 92%;
+          background-color: #ffffff;
+          overflow: auto;
+        }
+        .navbar a {
+          float: right;
+          padding: 30px;
+          color: rgb(0, 0, 0);
+          text-decoration: line;
+          font-size: 17px;
+        }
+        
+        .navbar a:hover {
+          background-color: #FF4500;
+        }
+        @media screen and (max-width: 500px) {
+          .navbar a {
+            float: none;
+            display: block;
+          }
+        }
+        .overlay {
+          height: 100%;
+          width: 0;
+          position: fixed;
+          z-index: 1;
+          top: 0;
+          left: 0;
+          background-color: rgba(0,0,0, 0.9);
+          overflow-x: scroll;
+          transition: 0.5s;
+        }
+        
+        .overlay-content {
+          position: relative;
+          top: 25%;
+          width: 100%;
+          text-align: center;
+          margin-top: 10px;
+        }
+        
+        .overlay a {
+          padding: 8px;
+          text-decoration: line;
+          font-size: 20px;
+          color: #818181;
+          display: block;
+          transition: 0.5s;
+        }
+        
+        .overlay a:hover {
+          color: #f1f1f1;
+        }
+        
+        .overlay .closebtn {
+          position: absolute;
+          top: 20px;
+          right: 45px;
+          font-size: 40px;
+        }
+        
+        @media screen and (max-height: 450px) {
+          .overlay a {font-size: 20px}
+          
+          .overlay .closebtn {
+          font-size: 40px;
+          top: 15px;
+          right: 35px;
+          }
+        }
+        
+        
+        
+        .list{
+         font-size:25px;
+         overflow:auto;
+         padding: 23px;
+         background-color: #1E90FF;
+         width: 4%;
+         cursor:pointer; 
+         float:left;
+        
+        }
