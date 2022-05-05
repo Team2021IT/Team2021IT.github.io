@@ -43,12 +43,22 @@
 
  .overlay a:hover { color: #f1f1f1;}
 
-.overlay .closebtn {
-  position: absolute;
-  top: 20px;
-  right: 45px;
-  font-size: 40px;
-}
+  .overlay .closebtn {
+	  position: absolute;
+	  top: 20px;
+	  right: 45px;
+	  font-size: 40px;
+	}
+   .list{
+	 font-size:25px;
+	 overflow:auto;
+	 padding: 23px;
+	 background-color: #1E90FF;
+	 width: 4%;
+	 cursor:pointer; 
+	 float:left;
+
+	}
 
    .column{float:center;
            padding:20px;
