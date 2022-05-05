@@ -15,40 +15,40 @@
 
    .overlay {
             height: 100%;
-	    width: 0;
-       	    position: fixed;
-	    top: 0;
-	    left: 0;
-	    background-color:#667399;
-	    overflow-x: scroll;
-	    transition: 0.5s;}
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: lightsteelblue;
+    overflow-x: auto;
+    transition: 0.5s;}
 
   .overlay-content {
-	  position: relative;
-	  top: 25%;
-	  width: 100%;
-	  text-align: center;
-	  text-decoration:none;
-	  margin-top: 10px;
-	}
+    position: relative;
+    top: 200px;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    margin-top: 10px;
+}
 
   .overlay a {
-	  padding: 8px;
-	  text-decoration: line;
-	  font-size: 20px;
-	  color: #818181;
-	  display: block;
-	  transition: 0.5s;
+    padding: 8px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #262626;
+    display: block;
+    transition: 0.5s
          }
 
  .overlay a:hover { color: #f1f1f1;}
 
   .overlay .closebtn {
-	  position: absolute;
-	  top: 20px;
-	  right: 45px;
-	  font-size: 40px;
-	}
+    position: absolute;
+    top: 40px;
+    right: 45px;
+    font-size: 40px;
+    text-decoration: none
+    }
    .list{
 	 font-size: 24px;
          overflow: auto;
