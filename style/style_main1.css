@@ -50,14 +50,13 @@
 	  font-size: 40px;
 	}
    .list{
-	 font-size:25px;
-	 overflow:auto;
-	 padding: 23px;
-	 background-color: #1E90FF;
-	 width: 4%;
-	 cursor:pointer; 
-	 float:left;
-
+	 font-size: 24px;
+         overflow: auto;
+         padding: 0;
+         background-color: #363092;
+         width: auto;
+         cursor: pointer;
+         float: right;
 	}
 
    .column{float:center;
