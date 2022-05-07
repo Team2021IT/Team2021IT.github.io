@@ -45,11 +45,11 @@
   .overlay .closebtn {
     position: absolute;
     top: 40px;
-    right: 45px;
+    right: 65px;
     font-size: 40px;
     text-decoration: none;
     text-align: center;
-    }
+}
    .list{
 	 font-size: 24px;
          overflow: auto;
