@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" >
+    <link rel="stylesheet" href="style\buying_page2.css">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta name="keywords" content="HTML, CSS,javascript">
+    <title>buyingpage</title>
+    <link rel="stylesheet" type="text/css" href="stylebuying.css"
+</head>
+<body>
+    
+    <div class="navbar">
+        <h2 class="lol" style="display: inline; padding: 15px; text-decoration: line; color: white; font-size: 17px;  float: left;">Book Fair</h2>
+        <a class="active" href="#"><i class="fa fa-fw fa-home"></i> Home</a> 
+        <a href="#"><i class="fa fa-fw fa-search"></i> Search</a> 
+        <a href="#"><i class="fa fa-fw fa-envelope"></i> Contact</a> 
+        <a href="#"><i class="fa fa-fw fa-user"></i> Login</a>
+      </div>
+      <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">X</a>
+        <div class="overlay-content">
+          <a href="#">About</a>
+          <a href="#">Services</a>
+          <a href="#">Clients</a>
+          <a href="#">Contact</a>
+        </div>
+      </div>
+      <span class="list" onclick="openNav()">&#9776;</span>
+      
+      <script>
+      function openNav() {
+        document.getElementById("myNav").style.width = "15%";
+      }
+      
+      function closeNav() {
+        document.getElementById("myNav").style.width = "0%";
+      }
+      </script>
+      <img class="img"  src="Images\warad.jpg" alt="كتاب ورد اسود" >
+
+      <div class="div-form" >
+        <form class="form-content">
+          <h1 class="head">contact information</h1>
+      
+          <label for="name"><b> name</b></label>
+          <input type="text" placeholder="Enter your first name" id="name"  required> <!----مش محتاج احط name علشان مفيش database-->  
+  
+          <label for="email"><b>Email</b></label>
+          <input type="email" placeholder="Enter your Email" id="email" required>
+        
+          <label for="phone"><b>phone number</b></label>
+          <input type="number" placeholder="Enter your phone number" id="phone" required>
+
+          <label for="address"><b>address</b></label>
+          <input type="text" placeholder="Enter your address" id="address"  required>
+      
+          <button id="submit" type="submit">submit</button>
+        </form>
+      </div>      
+        <footer id="footer">
+          <h2> footer </h2>
+        </footer>
+      
+      </body>
+      </html>
