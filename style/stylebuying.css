@@ -1,0 +1,185 @@
+body {font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(140deg,#d8dfe3,#12100f);
+  margin: 0;
+  padding: 0;}
+.navbar {
+  float:right;
+  width: 92%;
+  background-color: #000000;
+  overflow: auto;
+}
+.navbar a {
+  float: right;
+  padding: 30px;
+  color: white;
+  text-decoration: line;
+  font-size: 17px;
+}
+
+.navbar a:hover {
+  background-color: #FF4500;
+}
+@media only screen and(max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+  }
+}
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgba(0,0,0, 0.9);
+  overflow-x: scroll;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: line;
+  font-size: 20px;
+  color: #818181;
+  display: block;
+  transition: 0.5s;
+}
+
+.overlay a:hover {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 40px;
+}
+
+@media only screen and(max-height: 450px) {
+  .overlay a {font-size: 20px}
+  
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
+}
+
+
+
+.list{
+ font-size:25px;
+ overflow:auto;
+ padding: 23px;
+ background-color: #1E90FF;
+ width: 4%;
+ cursor:pointer; 
+ float:left;
+
+}
+footer {
+    position:absolute;
+    background-color: hsl(0, 0%, 3%);
+    width: 99%; 
+    color: rgb(1, 10, 17); 
+    bottom: 0;
+}
+.div-form{
+    position :relative;
+    left: 440px;
+    bottom: auto;/* مش محتاج احط top لاني خلاص مظبطها ب margin-top */
+    margin-top: 30px;
+    margin-bottom: 40px; /* مش بتأثر اوي لانها في ال position شغال علي حجم الصفحه كلعا */
+    margin-right: 120px;
+    padding: 30px 30px 30px 30px;
+    background-color: #eee9e9;
+    float: left;
+    border-radius: 80px;
+    width: 38%;
+    height: 480px;
+  
+
+}
+.div-form .head{
+  text-align: center;
+}
+input[type=text]{
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 12px;
+}
+input[type=email]{
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;/* لما غيرت ال box sizing ال width زاد */
+  margin-top: 6px;
+  margin-bottom: 12px;
+}
+input[type=number]{
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 12px;
+}
+#submit{
+  font-size: 25px;
+  width: 50%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 18px;
+  box-sizing: border-box;
+  margin-top: 40px;
+  margin-bottom: 12px;
+  margin-left: 145px; /* لو هنضيف خانة تاني ممكن نغير في ال margin بتاع ال sumbit علشان نفضي مساحه تاني */
+  cursor: pointer;
+  background-color: #1E90FF;
+}
+input[type=submit]:hover {
+  background-color: #041104;
+}
+.footer{
+  background-color: #000000;
+  position: fixed;
+  overflow: auto;
+  bottom: 0;
+  margin: 0;
+  padding: 0;
+  width:100%;
+}
+.footer ul{
+  list-style: none;
+  padding: 0px;
+}
+.footer ul li {
+  display: inline;
+  text-decoration: none;  
+}
+.footer ul li a{
+  float: left;
+  font-size: 17px;
+  padding: 30px;
+  color: white;
+  text-decoration: none;
+}
+.footer ul li a:hover{
+  color: #FF4500;
+}
