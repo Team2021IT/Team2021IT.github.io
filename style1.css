@@ -68,8 +68,10 @@ top: 660px;
 
 .img1{
 position: absolute;
-left: 140px;
-top: 660px;
+right: 122px;
+top: 75px;
+width: 3cm;
+height: 3cm;
 }
 
 .img2{
