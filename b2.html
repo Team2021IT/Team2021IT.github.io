@@ -4,6 +4,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@1,700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 <link rel="icon" href="s8ir.jpg">
 <link rel="stylesheet" href="style2.css">
@@ -17,4 +18,110 @@
     <p class="p2">
         : وصف الكتاب
     </p>
+    
+    <div class="steven">
+      <span class="price" title="Price">59.99<span> EGP</span></span>
+      <span style="display: none;">شهداء الصحابة</span>
+      <button class="add-to-cart">Add To Cart</button>
+      <button class="add-to-wishlist">
+          <span class="material-symbols-outlined">
+          favorite
+          </span>
+          <span>Add To Wishlist</span>
+      </button>
+  </div>
+</div>
+
+<script>
+    //---------------------- By Steven Start ------------------------------------------------
+    productOne = {
+        image: "b2.jpg",
+        price: 59.99,
+        title: "شهداء الصحابة",
+    }
+    // Cart Start
+    let addToCartBtn = document.getElementsByClassName('add-to-cart')[0];
+    addToCartBtn.addEventListener('click', addToCartButton);
+    // for (let i = 0; i < addToCartBtns.length; i++) {
+    //     cartBtn = addToCartBtns[i];
+    //     cartBtn.addEventListener('click', addToCartButton);
+    // }
+    function addToCartButton() {
+        //let button = event.target;
+        if (localStorage.getItem("productOneTitle") === "شهداء الصحابة") {
+                alert("The Item Already In The Cart");
+                return;
+            }
+        localStorage.setItem("productOneImage", productOne.image);
+        localStorage.setItem("productOneTitle", productOne.title);
+        localStorage.setItem("productOnePrice", productOne.price);
+        localStorage.setItem("productOneQty", 1);
+        alert("Item Has Been Added Successfully");
+    }
+    // Cart End
+    // Fav Start
+    let addToFavBtn = document.getElementsByClassName('add-to-wishlist')[0];
+    addToFavBtn.addEventListener('click', addToFavButton);
+    function addToFavButton() {
+        if (localStorage.getItem("bookOneTitle") === "شهداء الصحابة") {
+                alert("The Item Already In The Wishlist");
+                return;
+            }
+        localStorage.setItem("bookOneImage", productOne.image);
+        localStorage.setItem("bookOneTitle", productOne.title);
+        localStorage.setItem("bookOnePrice", productOne.price);
+        alert("Item Has Been Added Successfully");
+    }
+    // Fav End
+    //---------------------- By Steven End ------------------------------------------------
+</script>
+
+
+<style>
+    label{
+        position: absolute;
+        width: 45px;
+        height: 22px;
+        right: 20px;
+        top: 20px;
+        border: 2px solid;
+        border-radius: 20px;
+    }
+    label:before{
+        position: absolute;
+        content: '';
+        width:20px;
+        height: 20px;
+        left: 1px;
+        top: 1px;
+        border-radius: 50%;
+        background: #000;
+        cursor: pointer;
+        transition: 0.4s;
+    }
+    label.active:before{
+        left: 24px;
+        background: #fff;
+    }
+    body.night{
+        background: #000;
+        color: #fff;
+    }
+    @media screen and (min-width:900px) {
+      .respon{
+        display: flex;
+      }
+    }
+</style>
+<header>
+<label  id="dark-change"></label>
+</header>
+<script>
+    var content = document.getElementsByTagName('body')[0];
+    var darkMode = document.getElementById('dark-change');
+    darkMode.addEventListener('click', function(){
+        darkMode.classList.toggle('active');
+        content.classList.toggle('night');
+    })
+</script>
 </body>
