@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+        <title>The Shopping Cart</title>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <!-- The Main Style  -->
+        <link rel="stylesheet" href="css/cart.css">
+        <!-- The Icon -->
+        <link rel="icon" href="cart.png">
+        <!-- Google Font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container">
+            <h1 class="heading">My Cart</h1>
+            <div class="main-row">
+                <p class="item col">Product</p>
+                <p class="item-price col">Price</p>
+                <p class="item-quantity col">Qty</p>
+                <p class="item-total col">Remove</p>
+            </div>
+            <div class="cart-items"></div>
+            <div class="cart-total">
+                <span class="cart-total-label">Cart Total : </span>
+                <span class="cart-total-price">0</span>
+                <button class="buying">Purchase</button>
+            </div>
+        </div>
+        <!-- The Main JavaScript File -->
+        <script src="scripts/cart.js"></script>
+    </body>
+</html>

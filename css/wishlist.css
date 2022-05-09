@@ -1,0 +1,238 @@
+/* Global Rules Start */
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'El Messiri', sans-serif;
+    background-image: linear-gradient(to left, #1c1e4cb3, #7e5b26c7);
+    
+}
+.container {
+    padding-left: 70px;
+    padding-right: 70px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* Global Rules End */
+.container .heading {
+    margin: 50px auto;
+    text-align: center;
+    font-size: 60px;
+    font-weight: bolder;
+    color: black;
+}
+.main-row,
+.item-row {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    align-items: center;
+    background-color: orange;
+    margin-bottom: 10px;
+    opacity: .8;
+    box-shadow: 0 0 0px 3px #8b7373;
+}
+.main-row .col {
+    color: #333;
+    font-size: 25px;
+    font-weight: bolder;
+    text-align: center;
+    padding-bottom: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+}
+.wishlist-items .item-row .col {
+    text-align: center;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.wishlist-items .item-row .text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.item-price {
+    margin-right: 20px;
+}
+.wishlist-items .item-row .cart-price {
+    font-size: 20px;
+    margin-left: -30px;
+    color: #565454;
+}
+.remove-btn {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    color: #777;
+    font-size: 20px;
+    width: 30px;
+    border: none;
+    margin-right: 30px;
+}
+.clear-btn {
+    float: right;
+    margin-top: 20px;
+    width: 180px;
+    height: 70px;
+    border: none;
+    font-size: 20px;
+    font-weight: 800;
+    background-color: #00FFC6;
+    color: white;
+    border-radius: 6px;
+    transition-duration: .5s;
+    cursor: pointer;
+}
+.clear-btn:hover {
+    transform: scale(1.2, 1.2);
+}
+@media (max-width: 767px) {
+    .main-row,
+    .item-row {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .main-row .col {
+        font-size: 20px;
+    }
+    img {
+        width: 80px;
+        height: 80px;
+    }
+    .wishlist-items .item-row .cart-price {
+        font-size: 18px;
+    }
+}
+@media (max-width: 476px) {
+    .container {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .main-row,
+    .item-row {
+        width: 100%;
+    }
+    .remove-btn {
+        width: 25px;
+        font-size: 18px;
+    }
+}
+.squares {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.squares li {
+    position: absolute;
+    list-style: none;
+    width: 20px;
+    height: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    animation: floating 23s linear infinite;
+    bottom: -180px;
+}
+
+.squares li:nth-child(1) {
+    left: 40%;
+    width: 100px;
+    height: 100px;
+    animation-delay: 0s;
+}
+
+
+.squares li:nth-child(2) {
+    left: 70%;
+    width: 50px;
+    height: 50px;
+    animation-delay: 2s;
+    animation-duration: 12s;
+}
+
+.squares li:nth-child(3) {
+    left: 90%;
+    width: 100px;
+    height: 90px;
+    animation-delay: 4s;
+}
+
+.squares li:nth-child(4) {
+    left: 10%;
+    width: 70px;
+    height: 100px;
+    animation-delay: 0s;
+    animation-duration: 18s;
+}
+
+.squares li:nth-child(5) {
+    left: 30%;
+    width: 40px;
+    height: 40px;
+    animation-delay: 0s;
+}
+
+.squares li:nth-child(6) {
+    left: 50%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 3s;
+}
+
+.squares li:nth-child(7) {
+    left: 60%;
+    width: 90px;
+    height: 90px;
+    animation-delay: 7s;
+}
+
+.squares li:nth-child(8) {
+    left: 85%;
+    width: 30px;
+    height: 30px;
+    animation-delay: 15s;
+    animation-duration: 45s;
+}
+
+.squares li:nth-child(9) {
+    left: -3%;
+    width: 80px;
+    height: 80px;
+    animation-delay: 2s;
+    animation-duration: 35s;
+}
+
+.squares li:nth-child(10) {
+    left: 75%;
+    width: 110px;
+    height: 110px;
+    animation-delay: 0s;
+    animation-duration: 11s;
+}
+@keyframes floating {
+
+    0%{
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+        border-radius: 0;
+    }
+
+    100%{
+        transform: translateY(-1000px) rotate(720deg);
+        opacity: 0;
+        border-radius: 50%;
+    }
+
+}
