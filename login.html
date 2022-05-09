@@ -37,23 +37,34 @@
         document.getElementById("myNav").style.width = "0%";
       }
       </script>
-<div class="center">
-<h1>Login</h1>
-<form method="get" autocomplete="on" target="_blank" action="index.html">
-<div class="txt_field">
-<label>Username</label>
-<input type="text" required >
+<button class="open-button" onclick="openForm()">Open Form</button>
+
+<div class="form-popup" id="myForm">
+  <form action="/action_page.php" class="form-container">
+    <h1 id="h1">Login</h1>
+
+    <label for="email"><b>User Name</b></label>
+    <input type="text" placeholder="Enter Email" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" required>
+    <div class="signlink">
+      I dont have an email. <a herf="page1.htm.htm">Signup</a>
+    </div>
+    <button type="submit" class="btn">Login</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  </form>
 </div>
-<div class="txt_field">
-<label>password</label>
-<input type="Password" required >
-</div>
-<a href="page1.htm"><input class="submit" type="submit" value="login" ></a>
-<div class="signlink">
-I dont have an email. <a herf="page1.htm.htm">Signup</a>
-</div>
-</form>
-</div>
+
+<script>
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+</script>
 <footer>
   <h2> footer </h2>
 </footer>
