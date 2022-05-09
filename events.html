@@ -2,9 +2,49 @@
 <html lang="ar">
 <head>
 <meta http-equiv="content type"content="text/html;charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="HTML, CSS">
+    <title>Sections</title>
+    <link rel="stylesheet" type="text/css" href="daar.css">
 </head>
 <body>
-
+<div class="navbar">
+        <h2 class="lol" style="display: inline; padding: 15px; text-decoration: line; color: white; font-size: 17px;  float: left;">Book Fair</h2>
+        <a class="active" href="#"><i class="fa fa-fw fa-home"></i> Home</a> 
+        <a href="#"><i class="fa fa-fw fa-heart"></i> Favorite</a>  
+        <a href="#"><i class="fa fa-fw fa-file"></i> Sections</a> 
+        <a href="#"><i class="fa fa-fw fa-shopping-basket"></i> Basket</a> 
+        <a href="#"><i class="fa fa-fw fa-map"></i> Site's maps</a> 
+        <a href="#"><i class="fa fa-fw fa-user"></i> Login</a>
+      </div>
+      <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">X</a>
+        <div class="overlay-content">
+          <a href="#">sayed</a>
+        </div>
+      </div>
+      
+      <span class="list" onclick="openNav()">&#9776;</span>
+      <script>
+      function openNav() {
+        document.getElementById("myNav").style.width = "15%";
+      }
+      
+      function closeNav() {
+        document.getElementById("myNav").style.width = "0%";
+      }
+      </script>
+  <footer class="footer">
+<ul> 
+            <li><a href="#"><i class="fa fa-bullhorn" aria-hidden="true"></i> Contact Us</a> </li>
+            <li><a href="#"><i class="fa fa-question-circle" aria-hidden="true"></i> Help</a> </li>
+            <li><a href="#"><i class="fa fa-commenting-o" aria-hidden="true"></i> Feedback</a> </li>
+            <li><a href="#"><i class="fa fa-calendar" aria-hidden="true"></i> Events</a> </li>
+      </ul>
+  </footer>
+    
+    
+    
 <bdo dir="rtl">
 <h1 style="font-size:60px;">اهم احداث المعرض</h1>
 
