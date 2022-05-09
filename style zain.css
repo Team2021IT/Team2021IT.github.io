@@ -60,6 +60,26 @@ right: 332px;
 top: 215px;
 }
 
+.link2{
+  background-color: rgb(136, 210, 53);
+  border: none;
+  color: white;
+  padding: 3px 29px;
+  border: 2px solid white;
+  text-align: center;
+  text-decoration: none;
+  margin: 2px 1px;
+  font-size: 20px;
+  position: absolute;
+  left: 85px;
+  top: 228px;
+}
+
+.link2:hover, .link2:active 
+{
+  background-color: rgb(255, 218, 67);
+}
+
 .img1{
 position: absolute;
 right: 122px;
