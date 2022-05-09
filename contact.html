@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <TITle>contact us</TITle>
+</head>
+
+<body>
+    <h1 style="text-align: center; font: 45px sans-serif;  text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;">contact us</h1>
+    <ol style="text-align: center;">
+        <li class='home' style="padding-top: left: ; text-align: center;"><a href="home" target="_blank">Home</a></li>
+
+        <li style=" text-align: center">contact us</li>
+
+    </ol>
+
+    <pre>            We are an affiliate store of the International Book Fair.<br>
+              We are a locally owned and operated store in Egypt.<br>
+                We hope you enjoy your stay. Please fill out <br>
+                   theshort form to contact us with any <br>
+                    questions or concerns you may  have. <br>
+                      Thanks for supporting local <br>
+                          business and have <br>
+                             a great day <br>.</pre>
+
+
+    <style>
+        body {
+            background-image: url(contact.png);
+            background-attachment: fixed;
+            background-size: cover;
+        }
+        
+        pre {
+            font-size: 25px;
+            color: white;
+            text-shadow: 2px 2px 4px #3407e4;
+            position: relative;
+            left: 250px;
+        }
+        
+        input[type=text] {
+            width: 90%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        
+        #email {
+            width: 90%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        
+        input[type=submit] {
+            width: 100%;
+            background-color: #4CAF50;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        
+        input[type=submit]:hover {
+            background-color: #393d3a;
+        }
+        
+        div {
+            border-radius: 5px;
+            background-color: #352e2f;
+            padding: 20px;
+            position: relative;
+            left: 400px;
+            height: 520px;
+            opacity: 0.7;
+            width: 40%;
+        }
+        
+        li {
+            display: inline-block;
+            position: relative;
+            margin-right: 10px;
+        }
+        
+        .home::after {
+            content: '';
+            position: absolute;
+            right: -23px;
+            border-width: 10px;
+            border-style: solid;
+            border-color: transparent transparent transparent black;
+        }
+        
+        form {
+            display: grid;
+        }
+    </style>
+
+
+
+
+
+    <div>
+        <form action="/action_page.php">
+            <label for="name">First Name</label>
+            <input type="text" id="yourname" name="yourtname" placeholder="Your name.." required><br>
+
+            <label for="email">email</label>
+            <input type="email" id="email" placeholder="Email" required>
+            <br>
+            <label for="phone">phone number</label>
+            <input type="text" id="phone" required><br>
+
+
+            <textarea name="feedback" id="feeedback" cols="30" rows="10" placeholder="enter your feedback" required></textarea><br>
+            <input type="submit" value="Submit" onclick="saeed()">
+
+
+
+            <script>
+                function saeed() {
+                    var txt;
+                    if (confirm("Thank you for contacting usTo confirm the message, press ok!")) {
+                        txt = "We will contact you soon!";
+                    } else {
+                        txt = "thank you!";
+                    }
+
+                }
+            </script>
+        </form>
+
+    </div>
+</body>
+
+
+</html>
