@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>sign up for book fair|Book Fair</title>
+        <link rel="shortcut icon" href="logo.jpg">
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="signcss/sing.css">
+    </head>
+    <body>
+        <script>
+            function myFunction(){
+                alert("please sign up to join our family");
+            }
+        </script>
+        <div class="sign_up">
+            <h1>sign up</h1>
+            <h4>creat new account</h4>
+            <form action="https://www.youtube.com/" method="post">
+                <label for="F">first name :</label>
+                <input type="text" id="F" name="first" placeholder="first name" required>
+                <label for="L">last name :</label>
+                <input type="text" id="L" name="last" placeholder="last name" required>
+                <label for="E">email :</label>
+                <input type="email" id="E" name="email" placeholder="e-mail" required>
+                <label for="P">password :</label>
+                <input type="password" id="P" name="pass" placeholder="password" required>
+                <label for="CP">confirm password :</label>
+                <input type="password" id="CP" name="cpass" placeholder="password again" required>
+                <label class="arabic" for="SS">النوع :</label>
+                <select class="S" name="choose" id="SS">
+                    <option value="1">male</option>
+                    <option value="2">female</option>
+                    <option value="3">angel</option>
+                </select>
+                <input  class="B" type="submit" value="submit" id="">
+                <input onclick="myFunction()" class="R" type="reset" value="reset">
+            </form>
+            <p>already have an account? <a href="#">log in</a></p>
+        </div>
+    </body>
+</html>

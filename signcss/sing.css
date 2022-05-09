@@ -1,0 +1,52 @@
+body{
+    background-color: #344a70;
+    font-family: inherit;
+}
+.sign_up{
+    width: 360px;
+    height: 650px;
+    margin: auto;
+    background-color: rgb(183, 195, 191);
+}
+h1{
+    text-align: center;
+    padding-top: 10px;
+}
+h4{
+    text-align: center;
+}
+form{
+    width: 300px;
+    margin-left: 20px;
+}
+form label{
+    display: flex;
+    margin-top: 20px;
+    font-size: 20px;
+}
+form input{
+    width: 100%;
+    padding: 7px;
+}
+.B{
+    margin-top: 20px;
+    background-color: aquamarine;
+    color: white;
+    font-size: 20px;
+    width: 40%;
+}
+.S{
+    width: 60%;
+    height: 25px;
+}
+p{
+    text-align: center;
+
+}
+.R{
+    margin-top: 20px;
+    background-color: aquamarine;
+    color: white;
+    font-size: 20px;
+    width: 40%;
+}
