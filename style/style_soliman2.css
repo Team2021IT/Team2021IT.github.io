@@ -3,7 +3,7 @@ margin:0;
 padding:0;
 font-family:montserrat ;
 background: linear-gradient(120deg,#3b11e4,#951395);
-background-image: url("../Images/login.jpg");
+background-image: url(R.jfif);
 background-repeat: no-repeat;
 background-size: 100% 100%;
 background-attachment: fixed;
@@ -95,16 +95,9 @@ overflow:hidden;
    float:left;
   
   }
-  footer {
-      position:absolute;
-      background-color: hsl(0, 0%, 3%);
-      width: 100%; 
-      color: rgb(1, 10, 17); 
-      bottom: 0;
-      margin: 0;
-      padding: 0;
-  }
-.open-button {
+
+  
+  .open-button {
     background-color: rgb(14, 14, 16);
     color: rgb(221, 66, 15);
     padding: 16px 20px;
@@ -186,4 +179,31 @@ overflow:hidden;
     }
     .signup_link a:hover{
     text-decoration:underline;
+    }
+    .footer{
+      background-color: #000000;
+      position: fixed;
+      overflow: auto;
+      bottom: 0;
+      margin: 0;
+      padding: 0;
+      width:100%;
+    }
+    .footer ul{
+      list-style: none;
+      padding: 0px;
+    }
+    .footer ul li {
+      display: inline;
+      text-decoration: none;  
+    }
+    .footer ul li a{
+      float: left;
+      font-size: 17px;
+      padding: 30px;
+      color: white;
+      text-decoration: none;
+    }
+    .footer ul li a:hover{
+      color: #FF4500;
     }
