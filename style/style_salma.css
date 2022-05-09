@@ -9,7 +9,4 @@
       text-align:left;}
    
    body{margin:0;
-        background-image: url("Images\background.jpg");
-        background-repeat: no-repeat;
-        background-size: 100% 100%;
-        min-height:100vh;}
+	   min-height:100vh;}
