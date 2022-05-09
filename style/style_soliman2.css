@@ -2,15 +2,15 @@ body{
 margin:0;
 padding:0;
 font-family:montserrat ;
-background: linear-gradient (120deg,#3b11e4,#951395);
-background-image: url ("Images/login.jpg");
+background: linear-gradient(120deg,#2d1493,#c52323);
 background-repeat: no-repeat;
-background-size: 50% 50%;
+background-size: 100% 100%;
 background-attachment: fixed;
 height:100vh;
 overflow:hidden;
 }
 .navbar {
+  background-attachment: fixed;
     float:right;
     width: 92%;
     background-color: #000000;
