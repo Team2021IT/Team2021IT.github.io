@@ -1,14 +1,16 @@
    p{font-size:25px;
      text-indent:28px;} 
    
-   h1{font-size:45px;
-      margin-block-end:20px;
-	  text-align:left;}
+   h1{font-size: 70px;
+    -webkit-text-fill-color: whitesmoke;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+    text-align: center;}
    
    h2{font-size:30px;
       text-align:left;}
    
-   body{margin:0;
-	   background-size:cover;
-	   background-image:url("Images/background.jpg");
-	   min-height:100vh;}
+   body{margin: 0;
+    background-size: cover;
+    background-image: url(../Images/background.jpg);
+    min-height: 100vh;}
