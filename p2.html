@@ -4,21 +4,121 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@1,700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 <link rel="icon" href="m3aya.jpg">
 <link rel="stylesheet" href="style2.css">
 <body>
+    <div>
     <img src="m3aya.jpg">
     <h1>تأليف : فرح عادل</h1>
     <h2> ثقافه وادب</h2>
     <p class="p1">
         من بين سطور الرواية نطالع: "نظرت رحمة إلى الطفل الجالس بجوارها تملؤه رائحة الخوف الذي لم يستطع يوما أن يخفيه، فكان خائفا من كل شيء حوله، وكان أكثر ما يخيفه أمه التي التفتت له بعينين عاجزتين تتأملان عينيه، التي أبت أن تنظر إليهما رغم عشقها واشتياقها لهما.
 
-. نهضت من جانبه، ذهبت لتعد له طبق الغداء، وضعته أمامه لكن عينيه لم تفارقا التليفزيون الذي لم يكن يرى منه شيئا، ثم شعر بإصبعها يوخزه في جنبه مداعبة له، لكنه لم يضحك كما تمنت، إنما على العكس.. تجمعت غمامة قوية فوق عينيه أفقدته الرؤية، ومع ارتفاع صوت أنفاسه وشعوره بذراع أمه يلتف حوله ويضمه إلى صدرها.. انهالت دموعه سريعا وهو يشعر بفمها يقبل رأسه ليرتفع صوت بكائه عاليا، ثم دخل عليهما فجأة.. شوقي، رجل في العقد الرابع من العمر، قصير القامة، قبيح الوجه، والنفس، سليط اللسان، غليظ القلب والمشاعر، كريه الرائحة والطباع، لم يعلم سعيد أبدا لماذا تعترف به رحمة كزوج بينما تذكره هو كابن، نظر إليهما وهو يهز رأسه مستهزئا منهما.. وبسخرية قال: هو أنا كل ما أدخل عليكو ألاقيكوا حاضنين بعض وبتعيطو
+نهضت من جانبه، ذهبت لتعد له طبق الغداء، وضعته أمامه لكن عينيه لم تفارقا التليفزيون الذي لم يكن يرى منه شيئا، ثم شعر بإصبعها يوخزه في جنبه مداعبة له، لكنه لم يضحك كما تمنت، إنما على العكس.. تجمعت غمامة قوية فوق عينيه أفقدته الرؤية.
     </p>
 
     <p class="p2">
         : وصف الكتاب
     </p>
+
+    <div class="steven">
+        <span class="price" title="Price">49.99<span> EGP</span></span>
+        <span style="display: none;">كان لك معايا</span>
+        <button class="add-to-cart">Add To Cart</button>
+        <button class="add-to-wishlist">
+            <span class="material-symbols-outlined">
+            favorite
+            </span>
+            <span>Add To Wishlist</span>
+        </button>
+    </div>
+</div>
+<script>
+    //---------------------- By Steven Start ------------------------------------------------
+    productTwo = {
+        image: "m3aya.jpg",
+        price: 49.99,
+        title: "كان لك معايا"
+    }
+    // Cart Start
+    let addToCartBtn = document.getElementsByClassName('add-to-cart')[0];
+    addToCartBtn.addEventListener('click', addToCartButton);
+    function addToCartButton() {
+        if (localStorage.getItem("productTwoTitle") === "كان لك معايا") {
+            alert("The Item Already In The Cart");
+            return;
+        }
+        localStorage.setItem("productTwoImage", productTwo.image)
+        localStorage.setItem("productTwoTitle", productTwo.title)
+        localStorage.setItem("productTwoPrice", productTwo.price)
+        localStorage.setItem("productTwoQty", 1);
+        alert("Item Has Been Added Successfully")
+    }
+    // Cart End
+    // Fav Start
+    let addToFavBtn = document.getElementsByClassName('add-to-wishlist')[0];
+    addToFavBtn.addEventListener('click', addToFavButton);
+    function addToFavButton() {
+        if (localStorage.getItem("bookTwoTitle") === "كان لك معايا") {
+                alert("The Item Already In The Wishlist");
+                return;
+            }
+        localStorage.setItem("bookTwoImage", productTwo.image);
+        localStorage.setItem("bookTwoTitle", productTwo.title);
+        localStorage.setItem("bookTwoPrice", productTwo.price);
+        alert("Item Has Been Added Successfully");
+    }
+    // Fav End
+    //---------------------- By Steven End ------------------------------------------------
+</script>
+
+<style>
+    label{
+        position: absolute;
+        width: 45px;
+        height: 22px;
+        right: 20px;
+        top: 20px;
+        border: 2px solid;
+        border-radius: 20px;
+    }
+    label:before{
+        position: absolute;
+        content: '';
+        width:20px;
+        height: 20px;
+        left: 1px;
+        top: 1px;
+        border-radius: 50%;
+        background: #000;
+        cursor: pointer;
+        transition: 0.4s;
+    }
+    label.active:before{
+        left: 24px;
+        background: #fff;
+    }
+    body.night{
+        background: #000;
+        color: #fff;
+    }
+    @media screen and (min-width:900px) {
+      .respon{
+        display: flex;
+      }
+    }
+</style>
+<header>
+<label  id="dark-change"></label>
+</header>
+<script>
+    var content = document.getElementsByTagName('body')[0];
+    var darkMode = document.getElementById('dark-change');
+    darkMode.addEventListener('click', function(){
+        darkMode.classList.toggle('active');
+        content.classList.toggle('night');
+    })
+</script>
 </body>
-</html>
