@@ -9,7 +9,6 @@
       text-align:left;}
    
    body{margin:0;
-	   padding:100%;
 	   background-size:cover;
 	   background-image:url("Images/background.jpg");
 	   min-height:100vh;}
