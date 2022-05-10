@@ -59,7 +59,7 @@
           <label for="address"><b>address</b></label>
           <input type="text" placeholder="Enter your address" id="address"  required>
       
-          <button id="submit" type="submit">submit</button>
+          <button id="submit" type="submit">Purchase</button>
         </form>
       </div>      
       <footer class="footer">
@@ -70,6 +70,25 @@
               <li><a href="events.html"><i class="fa fa-calendar" aria-hidden="true"></i> Events</a> </li>
               </ul>
           </footer>
-      
+        <script>
+            // -------------------------------------------- By Steven Start --------------------------------
+            document.getElementsByClassName('form-content')[0].addEventListener('submit', purchase);
+            function purchase () {
+                localStorage.removeItem("productOneTitle");
+                localStorage.removeItem("productOneImage");
+                localStorage.removeItem("productOnePrice");
+                localStorage.removeItem("productOneQty");
+                localStorage.removeItem("productTwoTitle");
+                localStorage.removeItem("productTwoImage");
+                localStorage.removeItem("productTwoPrice");
+                localStorage.removeItem("productTwoQty");
+                localStorage.removeItem("productThreeTitle");
+                localStorage.removeItem("productThreeImage");
+                localStorage.removeItem("productThreePrice");
+                localStorage.removeItem("productThreeQty");
+                alert("The Purchase Is Successfully Done");
+            }
+            // -------------------------------------------- By Steven End --------------------------------
+        </script>
       </body>
       </html> 
