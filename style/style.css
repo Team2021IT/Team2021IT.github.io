@@ -5,14 +5,14 @@ padding:0;
 h1{
 position:relative;
 left:10px;
-top:85px;
+top:-4px;
   
 }
 p{
 position:absolute;
 left:10px;
 font-size:30px;
-  top:135;
+  top:130px;
 }
 body{
 background-image:url("../3.jpg");
