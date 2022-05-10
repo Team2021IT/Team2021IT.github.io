@@ -15,7 +15,7 @@ function all() {
         pBtn.addEventListener('click', increaseQuantity);
     }
     cartTotalPrice ()
-    document.getElementsByClassName('buying')[0].addEventListener('click', purchaseBtn)
+    document.getElementsByClassName('buying')[0].addEventListener('click', checkoutBtn)
 }
 // Change Quantity Start
 let quantityFields = document.getElementsByTagName("input");
@@ -188,17 +188,14 @@ function cartTotalPrice () {
     document.getElementsByClassName('cart-total-price')[0].innerHTML = total + " EGP";
 }
 // Cart Total Price End
-// Purchase Button Start
-function purchaseBtn (event) {
+// Checkout Button Start
+function checkoutBtn (event) {
     if (titleOne !== "شهداء الصحابة" && titleTwo !== "كان لك معايا" && titleThree !== "ورد اسود") {
         event.preventDefault();
         alert('The Cart Is Empty Please Add Item To Cart');
     } else {
-        RemoveFromStorage("productOneTitle", "productOneImage", "productOnePrice", "productOneQty");
-        RemoveFromStorage("productTwoTitle", "productTwoImage", "productTwoPrice", "productTwoQty");
-        RemoveFromStorage("productThreeTitle", "productThreeImage", "productThreePrice", "productThreeQty");
-        alert("The Purchase Is Successfully Done");
+        location.href = 'buyingpage.html';
     }
 }
-// Purchase Button End
+// Checkout Button End
 all()
