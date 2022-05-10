@@ -6,7 +6,7 @@ function all() {
         button.addEventListener('click', itemRemove);
     }
     document.getElementsByClassName('clear-btn')[0].addEventListener('click', clearBtn);
-    // If Cart Is Empty     
+    // If Wishlist Is Empty     
     if (localStorage.getItem("bookOneTitle") === null && localStorage.getItem("bookTwoTitle") === null &&
         localStorage.getItem("bookThreeTitle") === null ) {
             textDisplayed = document.getElementsByClassName('wishlist-items')[0];
