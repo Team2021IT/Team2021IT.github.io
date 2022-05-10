@@ -9,7 +9,7 @@
 }
 body {
     font-family: 'Josefin Sans', sans-serif;
-    background-image: url("Images/cartback.jpg");
+    background-image: url("../Images/cartback.jpg");
     background-size: cover;
     background-attachment: fixed;
 }
