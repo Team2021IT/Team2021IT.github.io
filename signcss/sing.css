@@ -1,0 +1,59 @@
+body{
+    background-image: url("../Images/backgroundsignup.jpg");
+	background-size: cover;
+    font-family: inherit;
+}
+.sign_up{
+    width: 360px;
+    height: 650px;
+    margin: auto;
+    background-color: rgba(0, 0, 0, .5);
+}
+h1{
+    text-align: center;
+    padding-top: 10px;
+	color: white;
+
+}
+h4{
+    text-align: center;
+	color: white;
+}
+
+form{
+    width: 300px;
+    margin-left: 20px;
+}
+form label{
+    display: flex;
+    margin-top: 20px;
+    font-size: 20px;
+	color: white;
+}
+form input{
+    width: 100%;
+    padding: 7px;
+}
+.B{
+    margin-top: 20px;
+    background-color: aquamarine;
+    color: white;
+    font-size: 20px;
+    width: 40%;
+}
+.S{
+    width: 60%;
+    height: 25px;
+}
+p{
+    text-align: center;
+	color: white;
+
+}
+.R{
+    margin-top: 20px;
+    background-color: aquamarine;
+    color: white;
+    font-size: 20px;
+    width: 40%;
+}
