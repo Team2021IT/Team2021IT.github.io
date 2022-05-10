@@ -9,8 +9,8 @@
 }
 body {
     font-family: 'El Messiri', sans-serif;
-    background-image: linear-gradient(to left, #1c1e4cb3, #7e5b26c7);
     min-height: 100vh;
+    background-image: linear-gradient(to left, #1c1e4cb3, #7e5b26c7);
 }
 .container {
     padding-left: 70px;
