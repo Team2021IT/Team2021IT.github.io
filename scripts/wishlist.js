@@ -6,6 +6,13 @@ function all() {
         button.addEventListener('click', itemRemove);
     }
     document.getElementsByClassName('clear-btn')[0].addEventListener('click', clearBtn);
+    // If Cart Is Empty     
+    if (localStorage.getItem("bookOneTitle") === null && localStorage.getItem("bookTwoTitle") === null &&
+        localStorage.getItem("bookThreeTitle") === null ) {
+            textDisplayed = document.getElementsByClassName('wishlist-items')[0];
+            textDisplayed.innerHTML = "Your Wishlist Is Empty Right Now";
+            textDisplayed.style.cssText = "font-size: 40px; margin: 30px 0 30px -40px;text-align: center;color: #444;"
+    }
 }
 // Remove Item Start
 function removeFromStorage (title, image, price) {
