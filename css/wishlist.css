@@ -20,7 +20,7 @@ body {
 }
 /* Global Rules End */
 .container .heading {
-    margin: 50px auto;
+    margin: 0 auto;
     text-align: center;
     font-size: 60px;
     font-weight: bolder;
@@ -126,6 +126,7 @@ body {
         font-size: 18px;
     }
 }
+/* The Background Theme Start */
 .squares {
     position: absolute;
     left: 0;
@@ -236,3 +237,13 @@ body {
     }
 
 }
+/* The Background Theme End */
+/* Layout Style Start */
+.list {
+    width: 7%;
+}
+.footer {
+    position: sticky;
+    top: 100%;
+}
+/* Layout Style End */
