@@ -12,6 +12,7 @@ body {
     background-image: url("../Images/cartback.jpg");
     background-size: cover;
     background-attachment: fixed;
+    min-height: 115vh;
 }
 .container {
     padding-left: 30px;
@@ -44,7 +45,7 @@ body {
     background-color: #ffeac9;
     position: absolute;
     right: 30px;
-    top: 21%;
+    top: 50%;
     width: 30%;
     height: 50vh;
     text-align: center;
@@ -208,3 +209,14 @@ input::-webkit-inner-spin-button {
     }
 }
 /* head */
+/* Layout Start */
+.header {
+    padding: 10px;
+}
+@media (max-width: 500px) {
+    .header {
+        padding: 30px;
+    }
+    
+}
+/* Layout End */
