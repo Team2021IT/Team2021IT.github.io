@@ -14,6 +14,13 @@ function all() {
         mBtn.addEventListener('click', decreaseQuantity);
         pBtn.addEventListener('click', increaseQuantity);
     }
+    // Check If Cart Is Empty
+    if (localStorage.getItem("productOneTitle") === null && localStorage.getItem("productTwoTitle") === null &&
+        localStorage.getItem("productThreeTitle") === null ) {
+            textDisplayed = document.getElementsByClassName('cart-items')[0];
+            textDisplayed.innerHTML = "Your Cart Is Empty Right Now";
+            textDisplayed.style.cssText = "font-size: 40px; margin: 50px 0px;margin-right: 30%;text-align: center;color: #ddd;"
+    }
     cartTotalPrice ()
     document.getElementsByClassName('buying')[0].addEventListener('click', checkoutBtn)
 }
